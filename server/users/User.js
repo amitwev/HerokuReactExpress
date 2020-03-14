@@ -5,7 +5,7 @@ module.exports = (app) => {
         console.log("inside users/user post"); 
         const dbResult = await db.query("select * from users"); 
         console.log("result from DB = ", dbResult);
-        if(res.rowCount > 0 ){
+        if(dbResult.rowCount > 0 ){
             res.status(200).json(dbResult);
         }else{
             res.status(500).json(dbResult);
