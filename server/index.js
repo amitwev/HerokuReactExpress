@@ -3,6 +3,10 @@ const path = require('path');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 
+const app = express();
+
+require('./imports.js')(app);
+
 const isDev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 5001;
 
@@ -20,8 +24,6 @@ if (!isDev && cluster.isMaster) {
     });
 
 } else {
-    const app = express();
-
     // Priority serve any static files.
     app.use(express.static(path.resolve(__dirname, '../client/build')));
 
