@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+p {
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    color: #366120;
+}
+
+button {
+    max-width: 150px;
+    min-height: 50px;
+    background-color: #4e864e;
+    color: #fff;
+    border: 1px solid #000;
+    margin: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.1px;
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Express",
+    "version": "3.0.0",
+    "description": "React Express with Heroku ",
+    "engines": {
+        "node": "10.x"
+    },
+    "scripts": {
+        "start": "node server",
+        "build": "cd react-ui/ && npm install && npm run build"
+    },
+    "cacheDirectories": [
+        "node_modules",
+        "react-ui/node_modules"
+    ],
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "keywords": [],
+    "license": "",
+    "devDependencies": {}
+}
